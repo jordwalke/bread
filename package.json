@@ -23,7 +23,7 @@
     "@reason-native/fp": "facebookexperimental/reason-native:fp.json#d08d115"
   },
   "scripts": {
-    "dogen": "esy dune exec ./src/bread_gen/BreadGen.exe #{self.root}/lib/bread/",
+    "dogen": "esy #{self.target_dir}/default/src/bread_gen/BreadGen.exe #{self.root}/lib/bread/",
     "format": "./scripts/format",
     "test": "esy x TestExe --onlyPrintDetailsForFailedSuites",
     "gen": "./scripts/gen"
