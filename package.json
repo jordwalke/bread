@@ -5,6 +5,9 @@
   "license": "MIT",
   "esy": {
     "build": "dune build -p #{self.name}",
+    "buildDev": [
+      "refmterr dune build ./src/bread_gen/BreadGen.exe"
+    ],
     "install": [
       "esy-installer bread.install"
     ]
@@ -20,11 +23,13 @@
     "@reason-native/fp": "facebookexperimental/reason-native:fp.json#d08d115"
   },
   "scripts": {
+    "dogen": "esy dune exec ./src/bread_gen/BreadGen.exe #{self.root}/lib/bread/",
     "format": "./scripts/format",
     "test": "esy x TestExe --onlyPrintDetailsForFailedSuites",
     "gen": "./scripts/gen"
   },
   "devDependencies": {
+    "refmterr": "*",
     "@reason-native/rely": "^3.1.0",
     "@reason-native/fp": "facebookexperimental/reason-native:fp.json#d08d115",
     "@reason-native/fs": "facebookexperimental/reason-native:fs.json#d08d115",
