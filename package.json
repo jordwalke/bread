@@ -12,7 +12,9 @@
   "dependencies": {
     "ocaml": "^4.08.0",
     "@opam/dune": "^1.11.4",
-    "@esy-ocaml/reason": "*"
+    "@esy-ocaml/reason": "*",
+    "@reason-native/fp": "*",
+    "@reason-native/fs": "*"
   },
   "resolutions": {
     "@reason-native/fp": "facebookexperimental/reason-native:fp.json#d08d115"
