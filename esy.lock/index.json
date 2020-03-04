@@ -1,5 +1,5 @@
 {
-  "checksum": "e0f47ddc266c70a0021c4e18f4055fd2",
+  "checksum": "f46e245701b7646b95d068f94f2d92c1",
   "root": "bread@link-dev:./package.json",
   "node": {
     "ocaml@4.9.0@d41d8cd9": {
@@ -26,12 +26,15 @@
         "manifest": "package.json"
       },
       "overrides": [],
-      "dependencies": [ "ocaml@4.9.0@d41d8cd9" ],
+      "dependencies": [
+        "ocaml@4.9.0@d41d8cd9", "@opam/dune@opam:2.3.1@b10b59bf",
+        "@esy-ocaml/reason@3.5.2@d41d8cd9"
+      ],
       "devDependencies": [
         "@reason-native/rely@3.2.1@d41d8cd9",
         "@reason-native/fs@github:facebookexperimental/reason-native:fs.json#d08d115@d41d8cd9",
         "@reason-native/fp@github:facebookexperimental/reason-native:fp.json#d08d115@d41d8cd9",
-        "@opam/merlin@opam:3.3.3@d653b06a", "@opam/dune@opam:2.3.1@b10b59bf"
+        "@opam/merlin@opam:3.3.3@d653b06a"
       ]
     },
     "@reason-native/rely@3.2.1@d41d8cd9": {

@@ -4,7 +4,7 @@
   "description": "Data Structures and Algorithms designed for Reason",
   "license": "MIT",
   "esy": {
-    "build": "dune build --profile=release",
+    "build": "dune build -p #{self.name}",
     "install": [
       "esy-installer bread.install"
     ]
