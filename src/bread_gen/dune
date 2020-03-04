@@ -1,10 +1,11 @@
 (executable
   (name BreadGen)
-  (public_name BreadGen)
   (libraries
     BreadConfig
     fp
     fs.lib
   )
+  (ocamlc_flags -w -27)
+  (ocamlopt_flags -w -27)
 )
 (include_subdirs unqualified)
